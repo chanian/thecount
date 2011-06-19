@@ -7,9 +7,7 @@ Sample Usage
     # Setup a counting request
     data = TheCount::count(
       # What do we want to count
-      [ TheCount::Twitter,
-      TheCount::Facebook,
-      TheCount::LinkedIn],
+      [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ],
       
       # Where do we want to count it
       :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/"
