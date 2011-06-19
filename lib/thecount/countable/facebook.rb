@@ -14,9 +14,9 @@ module TheCount
       url = data[:url]
       url = "https://graph.facebook.com/#{url}"
       begin
-        @count = JSON.parse(open(url).string)["shares"].to_i
+        @value = JSON.parse(open(url).string)["shares"].to_i
       rescue
-        @count = 0
+        @value = 0
       end  
     end
 
