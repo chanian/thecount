@@ -2,7 +2,7 @@ require 'open-uri'
 require 'cgi'
 require 'json'
 
-module Socializer
+module TheCount
   class Facebook
     def initialize
       @service_name = "facebook"

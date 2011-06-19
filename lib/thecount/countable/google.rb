@@ -2,7 +2,6 @@ require 'open-uri'
 require 'cgi'
 require 'json'
 
-
 # Since Google is in between Buzz and +1, lets
 # make no assumptions on a default and fully qualify both
 module Socializer
@@ -24,12 +23,5 @@ module Socializer
       end
     end
 
-    class PlusOne < Countable
-      def initialize
-        @service_name = "google"
-        @unit = "+1"
-        @value = 0
-      end
-    end
   end
 end

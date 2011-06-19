@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'cgi'
 require 'json'
 
 module Socializer
