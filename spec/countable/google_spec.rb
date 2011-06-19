@@ -15,7 +15,7 @@ describe TheCount::Google::Buzz do
     it "should return a non 0 integer for the count" do
       goog = TheCount::Google::Buzz.new
       goog.count({ :url => 'http://www.google.com/buzz' })
-      #goog.value.should > 0
+      goog.value.should > 0
     end
   end
 end

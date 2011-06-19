@@ -13,11 +13,11 @@ module TheCount
         @value = 0
       end
       def count(data)
-        url = data[:url]
+        url = "http://www.google.com/buzz/api/buzzThis/buzzCounter?url="
+        url = "#{url}#{CGI::escape(data[:url])}"
         begin
-          # and demeter cries
-          @value = JSON.parse(open(url).string)["data"]["counts"].first.last[0]["count"].to_i
-        rescue
+          @value = JSON.parse(open(url).string.split('(')[1].split(')')[0])[data[:url]].to_i
+        rescue Exception => e
           @value = 0
         end
       end
