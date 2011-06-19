@@ -3,7 +3,7 @@ require 'cgi'
 require 'json'
 
 module TheCount
-  class Facebook
+  class Facebook < TheCount::Countable
     def initialize
       @service_name = "facebook"
       @unit = "like"

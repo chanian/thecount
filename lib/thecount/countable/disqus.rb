@@ -3,7 +3,7 @@ require 'cgi'
 require 'json'
 
 module TheCount
-  class Disqus < Countable
+  class Disqus < TheCount::Countable
     def initialize
       @service_name = 'disqus'
       @unit = 'comment'

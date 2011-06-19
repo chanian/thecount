@@ -4,9 +4,9 @@ require 'json'
 
 # Since Google is in between Buzz and +1, lets
 # make no assumptions on a default and fully qualify both
-module Socializer
+module TheCount
   class Google
-    class Buzz < Countable
+    class Buzz < TheCount::Countable
       def initialize
         @service_name = "google"
         @unit = "buzz"

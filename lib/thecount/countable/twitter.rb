@@ -2,8 +2,8 @@ require 'open-uri'
 require 'cgi'
 require 'json'
 
-module Socializer
-  class Twitter < Countable
+module TheCount
+  class Twitter < TheCount::Countable
     def initialize
       @service_name = "twitter"
       @unit = "tweet"

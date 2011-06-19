@@ -3,7 +3,7 @@ require 'cgi'
 require 'json'
 
 module TheCount
-  class Digg
+  class Digg < TheCount::Countable
     def initialize
       @service_name = "digg"
       @unit = "digg"

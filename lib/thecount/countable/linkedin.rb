@@ -2,8 +2,8 @@ require 'open-uri'
 require 'cgi'
 require 'json'
 
-module Socializer
-  class LinkedIn
+module TheCount
+  class LinkedIn < TheCount::Countable
     def initialize
       @service_name = "linkedin"
       @unit = "share"
