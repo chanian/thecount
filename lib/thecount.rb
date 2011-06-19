@@ -7,7 +7,13 @@ require 'thecount/countable/google'
 require 'thecount/countable/digg'
 
 module TheCount
-  def self.count(strategies, args)
+  def self.count
+    config = {}
+    yield config
+
+    strategies = config[:strategies]
+    args = config[:args]
+
     strategies = [strategies] unless strategies.kind_of?(Array)
     strategies.collect { |s|
       service = s.new

@@ -8,22 +8,31 @@ Provides a simple interface for counting and reporting arbitrary things on the w
 Sample Usage
 -------------------
     # Setup a counting request
-    data = TheCount::count(
+    data = TheCount::count do |config|
       # What do we want to count
-      [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ],
+      config[:strategies] = [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ]
       
       # Where do we want to count it
-      :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/"
+      config[:args] = { :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/" }
     )
     
     # Print out all the values
-    data.each { |c|
-      p "#{c.service_name} -> #{c.value}"
+    data.each { |count|
+      p "#{count.service_name} -> #{count.value}"
     }
     # (at the time of this example)
     # twitter -> 900
     # facebook -> 3000
     # linkedin -> 444
+
+Supported Services
+-------------------
+  - Twitter Link Shares
+  - Facebook Likes
+  - Facebook Comment threads
+  - LinkedIn Shares
+  - Google Buzzes
+  - Digg diggs
 
 Tests
 -------------------
