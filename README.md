@@ -30,12 +30,12 @@ Sample Usage
 
 Supported Services
 -------------------
-  - Twitter Link Shares
-  - Facebook Likes
-  - Facebook Comment threads
-  - LinkedIn Shares
-  - Google Buzzes
-  - Digg diggs
+  - TheCount::Twitter (Twitter Link Shares)
+  - TheCount::Facebook (Facebook Likes)
+  - TheCount::Facebook::Comments (Facebook Comment threads)
+  - TheCount::LinkedIn (LinkedIn Shares)
+  - TheCount::Google::Buzz (Google Buzzes)
+  - TheCount::Digg (Digg diggs)
 
 Tests
 -------------------
