@@ -2,6 +2,9 @@ TheCount Gem
 ====================
 Provides a simple interface for counting and reporting arbitrary things on the web
 
+![Mascot](http://4.bp.blogspot.com/-TCPvrnG-KCs/TfMjpWepAKI/AAAAAAAAJWA/49r4o_q6JaA/s1600/TheCount.jpg)
+
+
 Sample Usage
 -------------------
     # Setup a counting request
