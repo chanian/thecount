@@ -25,6 +25,12 @@ Sample Usage
     # facebook -> 3000
     # linkedin -> 444
 
+Tests
+-------------------
+To run the test suite run
+
+    rake test
+
 Notes
 -------------------
 This library essentially makes calls to the otherwise jsonp endpoint to the respective service. I've also purposely gone through the client api's like this to avoid the need to auth.
