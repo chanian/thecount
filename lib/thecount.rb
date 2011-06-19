@@ -8,7 +8,7 @@ require 'thecount/countable/digg'
 
 module TheCount
   def self.count(strategies, args)
-    output = {}
+    strategies = [strategies] unless strategies.kind_of??(Array)
     strategies.collect { |s|
       service = s.new
       service.count(args)
