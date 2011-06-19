@@ -4,7 +4,10 @@ Provides a simple interface for counting and reporting arbitrary things on the w
 
 ![Mascot](http://4.bp.blogspot.com/-TCPvrnG-KCs/TfMjpWepAKI/AAAAAAAAJWA/49r4o_q6JaA/s1600/TheCount.jpg)
 
-
+Installation
+-------------------
+    gem install thecount
+    
 Sample Usage
 -------------------
     # Setup a counting request

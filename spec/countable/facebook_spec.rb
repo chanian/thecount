@@ -3,7 +3,7 @@ require 'helper'
 
 describe TheCount::Facebook do
   describe "#initialize" do
-    it "should set the correct defaults" do
+    it "should set the correct defaults, and default to 'like'" do
       fb = TheCount::Facebook.new
 
       fb.service_name.should eql "facebook"
