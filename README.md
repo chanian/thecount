@@ -20,9 +20,10 @@ Sample Usage
     )
     
     # Print out all the values
-    data.each { |count|
-      p "#{count.service_name} -> #{count.value}"
-    }
+    p "#{data[TheCount::Twitter].service_name} -> #{data[TheCount::Twitter].value}"
+    p "#{data[TheCount::Facebook].service_name} -> #{data[TheCount::Facebook].value}"
+    p "#{data[TheCount::LinkedIn].service_name} -> #{data[TheCount::LinkedIn].value}"
+
     # (at the time of this example)
     # twitter -> 900
     # facebook -> 3000

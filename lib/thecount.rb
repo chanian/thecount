@@ -15,10 +15,12 @@ module TheCount
     args = config[:args]
 
     strategies = [strategies] unless strategies.kind_of?(Array)
-    strategies.collect { |s|
+    results = {}
+    strategies.each { |s|
       service = s.new
       service.count(args)
-      service
+      results[s] = service
     }
+    results
   end
 end
