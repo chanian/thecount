@@ -10,6 +10,8 @@ Installation
     
 Sample Usage
 -------------------
+
+``` rb
     # Setup a counting request
     data = TheCount::count do |config|
       # What do we want to count
@@ -28,15 +30,16 @@ Sample Usage
     # twitter -> 900
     # facebook -> 3000
     # linkedin -> 444
+```
 
 Supported Services
 -------------------
-  - TheCount::Twitter (Twitter Link Shares)
-  - TheCount::Facebook (Facebook Likes)
-  - TheCount::Facebook::Comments (Facebook Comment threads)
-  - TheCount::LinkedIn (LinkedIn Shares)
-  - TheCount::Google::Buzz (Google Buzzes)
-  - TheCount::Digg (Digg diggs)
+  - **TheCount::Twitter** (Twitter Link Shares)
+  - **TheCount::Facebook** (Facebook Likes)
+  - **TheCount::Facebook::Comments** (Facebook Comment threads)
+  - **TheCount::LinkedIn** (LinkedIn Shares)
+  - **TheCount::Google::Buzz** (Google Buzzes)
+  - **TheCount::Digg** (Digg diggs)
 
 Tests
 -------------------
