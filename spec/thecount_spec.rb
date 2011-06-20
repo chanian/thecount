@@ -5,7 +5,7 @@ require 'helper'
 describe TheCount do
   describe "#count" do
     context "given a single strategy input" do
-      it "should return an object with an key-value pair for the strategy type" do
+      it "should return an hash with an key-value pair for the strategy type" do
         counts = TheCount::count do |config|
           config[:strategies] = TheCount::Twitter
           config[:args] = { :url => 'http://google.com' }
@@ -15,7 +15,7 @@ describe TheCount do
       end
     end
     context "given multiple strategies as input" do
-      it "should return an array of strategies" do
+      it "should return an hash with an key-value pair for the strategy type" do
         counts = TheCount::count do |config|
           config[:strategies] = [TheCount::Facebook, TheCount::Twitter]
           config[:args] = { :url => 'http://google.com' }
