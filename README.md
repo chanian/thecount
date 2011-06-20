@@ -12,24 +12,24 @@ Sample Usage
 -------------------
 
 ``` rb
-    # Setup a counting request
-    data = TheCount::count do |config|
-      # What do we want to count
-      config[:strategies] = [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ]
-      
-      # Where do we want to count it
-      config[:args] = { :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/" }
-    )
-    
-    # Print out all the values
-    p "#{data[TheCount::Twitter].service_name} -> #{data[TheCount::Twitter].value}"
-    p "#{data[TheCount::Facebook].service_name} -> #{data[TheCount::Facebook].value}"
-    p "#{data[TheCount::LinkedIn].service_name} -> #{data[TheCount::LinkedIn].value}"
+# Setup a counting request
+data = TheCount::count do |config|
+  # What do we want to count
+  config[:strategies] = [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ]
+  
+  # Where do we want to count it
+  config[:args] = { :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/" }
+)
 
-    # (at the time of this example)
-    # twitter -> 900
-    # facebook -> 3000
-    # linkedin -> 444
+# Print out all the values
+p "#{data[TheCount::Twitter].service_name} -> #{data[TheCount::Twitter].value}"
+p "#{data[TheCount::Facebook].service_name} -> #{data[TheCount::Facebook].value}"
+p "#{data[TheCount::LinkedIn].service_name} -> #{data[TheCount::LinkedIn].value}"
+
+# (at the time of this example)
+# twitter -> 900
+# facebook -> 3000
+# linkedin -> 444
 ```
 
 Supported Services
