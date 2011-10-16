@@ -14,7 +14,7 @@ Sample Usage
     # Setup a counting request
     data = TheCount::count do |config|
       # What do we want to count
-      config[:strategies] = [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn ]
+      config[:strategies] = [ TheCount::Twitter, TheCount::Facebook, TheCount::LinkedIn, TheCount::Google::Plus ]
   
       # Where do we want to count it
       config[:args] = { :url => "http://techcrunch.com/2011/06/16/rebecca-black-friday-video-no-longer-available-on-youtube/" }
