@@ -17,7 +17,7 @@ module TheCount
         url = "#{url}#{CGI::escape(data[:url])}"
         begin
           # like penut butter brittle
-          @value = open(url).string.split('window.__SSR = {')[1].split('};')[0].split("'c':")[1].split(",")[0].strip.to_i
+          @value = open(url).string.split('window.__SSR = {')[1].split('};')[0].split("c:")[1].split(",")[0].strip.to_i
         rescue Exception => e
           puts e
           @value = 0
